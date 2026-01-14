@@ -1,3 +1,13 @@
+:root
+{
+    --bg: #212121;
+    --panel: #323232;
+    --border: #0D7377;
+    --text: #e7eaf0;
+    --accent: #14FFEC;
+}
+
+
 body,
 h1,
 h2,
@@ -8,7 +18,84 @@ h6 {
     font-family: "Montserrat", sans-serif
 }
 
-.navbar-container
+body{
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+}
+.navbar{
+    padding-bottom: 0px;
+    border-bottom: 4px solid var(--accent);
+    
+}
+ .nav-container
+ {
+    background-color: var(--panel);
+ }
+.header-section
 {
-    border-bottom: 4px solid purple;
+    padding-top: 3.6em;
+}
+
+.nav-link
+{
+    color: var(--text);
+}
+
+
+.page-header
+{
+    padding-top: 1rem;
+    font-size: 2em;
+    font-weight: 800;
+}
+.navbar .nav-divider
+{
+        height: 2em;
+        width: 2px;
+        color: var(--text);
+        background-color: var(--text);
+        border: 1px solid var(--text);
+        border-radius: 1px;
+        margin-left: 1em;
+}
+.navbar-brand
+{
+    color: var(--text);
+}
+
+.card-title{
+    color: var(--text);
+}
+
+.project-card {
+    overflow: hidden;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: var(--panel);
+}
+
+.card-img-left {
+    object-fit: cover;
+}
+
+.panel-heading {
+    cursor: pointer;
+}
+
+.panel-heading i {
+    transition: transform 0.2s ease;
+}
+
+.panel-heading[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.info-button
+{
+    color: var(--text);
+}
+.info-button:hover
+{
+    color: var(--accent);
 }
