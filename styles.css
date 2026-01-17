@@ -14,8 +14,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: "Montserrat", sans-serif
+h6,
+p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text);
 }
 
 body{
@@ -68,6 +70,12 @@ body{
     color: var(--text);
 }
 
+.card-body
+{
+    color: var(--text);
+    padding: 2rem;
+}
+
 .project-card {
     overflow: hidden;
     max-width: 80%;
@@ -77,14 +85,28 @@ body{
 
 .card-img-left {
     object-fit: cover;
+    transition: transform .2s;
+}
+.card-img-left:hover
+{
+    transform: scale(1.05);
 }
 
 .panel-heading {
     cursor: pointer;
+    color: var(--text);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 5px;
+    width: 12rem;
 }
 
 .panel-heading i {
     transition: transform 0.2s ease;
+}
+.panel-heading span {
+    font-size: 2em;
+    
 }
 
 .panel-heading[aria-expanded="true"] i {
@@ -98,4 +120,12 @@ body{
 .info-button:hover
 {
     color: var(--accent);
+}
+
+.badge
+{
+    background-color: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    margin-right: .5em;
 }
