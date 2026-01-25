@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid nav-container">
-            <a class="navbar-brand" href="#">George Brackpool</a>
+            <a class="nav-link" href="#">George Brackpool</a>
             <div class="nav-divider"></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +30,9 @@
             </div>
         </div>
     </nav>
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+    <!------------------------>
     <header class="header-section">
         <div class="container">
             <div class="row align-items-center justify-content-center">
@@ -62,17 +65,32 @@
                     <div class="badge-row mb-4">
                         <span class="badge">C#</span>
                         <span class="badge">Unity</span>
+                        <span class="badge">Google Play</span>
                         <span class="badge">WebGL</span>
                     </div>
                     <!-- Collapse Toggle -->
+                <div class="panel-actions d-flex align-items-center gap-3">
                     <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
                         data-bs-target="#collapse-duck-dive" aria-expanded="false" role="button">
                         <span class="panel-text">More info</span>
                         <i class="fa fa-chevron-up"></i>
                     </div>
+                    <!-- External buttons -->
+                    <a href="https://github.com/GeorgeBrackpool/Duck-Dive" class="panel-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    
+                    <a href="https://gbrackpool.itch.io/duck-dive" class="panel-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.DuckDive&hl=en_GB" class="panel-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-google-play"></i>
+                    </a>
                 </div>
-            </div> 
-        </div>
+            </div>
+        </div> 
+    </div>
         <!-- Body text inside the card. -->
         <div id="collapse-duck-dive" class="collapse">
             <div class="card-body border-top">
@@ -80,10 +98,21 @@
                     high replayability. I tried to capture the simple but fun nature of popular mobile games around 2010 such as Temple Run and Flappy Bird. The inspiration for the project was
                 watching ducks at my local lake feed off of the bottom of the lake by diving underwater. 
                 </p>
+                <p>The player will tap or tap and hold on the screen to dive underwater. Points are earned by staying underwater and going through the obstacles without touching them. If the player touches an obstacle then
+                    they die and have to start again. Players can also fly into the air by swiping upwards when they are on the water's surface. Bread and Peas will appear in the air coming towards the player
+                    if they successfully touch the bread or peas then they get bonus points. However there will be some hawks and swans also flying in the air so caution is needed by the player. There is also an oxygen
+                    system that the player must consider. When they dive underwater the oxygen meter reduces, as soon as they reach the surface of the water the Oxygen Meter refills. This adds an extra layer of difficulty
+                    and is another factor for the player to consider in whether they should fly or dive underwater to avoid obstacles.
+                </p>
+                <img src="/images/Space-tracer-dive.jpg" alt="A screenshot of Duck Dive with an overlay showing touch screen controls" class="rounded mx-auto d-block card-description-images">
 
                 <p>I implemented Google Play Games integration so that players could unlock achievements and compete with friends and other players globally by setting high scores on the leaderboard.
-                    The biggest challenge was implementing the unlockable skins feature. I used player prefs and unlock matri
+                    The biggest challenge was implementing the unlockable skins feature. I used Unity's player prefs and scriptable objects for this feature. When a player had earned enough points to unlock
+                    one of the points achievements then during play booleans would change to make the skin selectable in the customisation shop. When the skin is selected it would set the PlayerPrefs to an integer assigned to the skin.
+                    When the player loads in, a script checks the PlayerPrefs and then accesses the sprite stored in the scriptable object (named SkinDatabase) associated with the playerpref integer and changes the Duck's sprite.
                 </p>
+
+                <img src="/images/duck_dive_customisation.PNG" alt="A screenshot of Duck Dive with an overlay showing touch screen controls" class="rounded mx-auto d-block card-description-images">
             </div>
         </div>
     </article>
@@ -102,7 +131,7 @@
             <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
                 <div class="card-body">
                     <h5 class="card-title mb-2">Space Tracer</h5>
-                    <p>A fun arcade game which mixes Space Invaders with Galaga. Available on the Google
+                    <p>A fun top-down arcade game which mixes Space Invaders with Galaga. Available on the Google
                         Play Store and itch.io.</p>
                     <div class="badge-row mb-4">
                         <span class="badge">C#</span>
@@ -110,10 +139,25 @@
                         <span class="badge">WebGL</span>
                     </div>
                     <!-- Collapse Toggle -->
+                <div class="panel-actions d-flex align-items-center gap-3">
                     <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
                         data-bs-target="#collapse-space-tracer" aria-expanded="false" role="button">
                         <span class="panel-text">More info</span>
                         <i class="fa fa-chevron-up"></i>
+                    </div>
+                    <!-- External buttons -->
+                    <a href="https://github.com/GeorgeBrackpool/Space-Tracer" class="panel-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    
+                    <a href="https://gbrackpool.itch.io/space-tracer" class="panel-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.SpaceTracer&hl=en_GB" class="panel-btn"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-google-play"></i>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -121,9 +165,17 @@
         <!-- Body text inside the card. -->
         <div id="collapse-space-tracer" class="collapse">
             <div class="card-body border-top">
-                <p class="bottom-card-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                skateboard dolor brunch.</p>
+                <p class="bottom-card-text">Space Tracer was my first game release. Built for touchscreen on mobile devices Space Tracer is a top-down arcade game that has elements of
+                    Galaga and Space Invaders. The player taps and drags along the bottom of the screen to move the ship to avoid lasers and enemy ships. The ships laser fires automatically. 
+                </p>
+
+                <p>The player's movement is restricted to just move along the x-axis. The overall goal and gameplay loop is to rack up as
+                high of a score as possible whilst avoiding fast paced ships and projectiles. There are up to 20 unique waves to destroy
+                with a big boss every 5 waves. The waves will loop continously as long as the player is alive. To help the player random power ups will fall down 
+            from the top of the screen</p>
+
+            <p>I used the Cloudonce plugin for Google Play Games integration to create a leaderboard and achievements. It is a great feature which gave players more of an
+            incentive to beat their high scores by comparing and competing with friends and players worldwide.</p>
             </div>
         </div>
     </article>
@@ -160,9 +212,9 @@
         <!-- Body text inside the card. -->
         <div id="collapse-asteroid-assault" class="collapse">
             <div class="card-body border-top">
-                <p class="bottom-card-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                skateboard dolor brunch.</p>
+                <p class="bottom-card-text">Asteroid Assault was my first 3D release. Inspired by Starfox and the scene from Star Wars: The Empire Strikes Back where
+                    they encounter a giant space worm in the asteroid field. 
+                </p>
             </div>
         </div>
     </article>
@@ -209,11 +261,15 @@
         <!-- Body text inside the card. -->
         <div id="collapse-mission-tracker" class="collapse">
             <div class="card-body border-top">
-                <!-- TODO: embed youtube clip https://www.youtube.com/watch?v=jeJ9ZQ10lHA -->
                 <p class="bottom-card-text">Due to CS50's rules I am unable to share the code publicly for this project. However I can share the Final Project
                 Demonstration which can be viewed via the youtube video below.</p>
-
-                <p class="bottom-card-text">This is a Flask Web Application that fetches and displays upcoming SpaceX and other Spaceflight launches using the Launch
+                <div class="d-flex justify-content-center">
+                <iframe class="justify-content-center" width="560" height="315" src="https://www.youtube.com/embed/jeJ9ZQ10lHA?si=JC0DsKzoNxZZFQJ2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="bottom-card-text mt-4">This is a Flask Web Application that fetches and displays upcoming SpaceX and other Spaceflight launches using the Launch
                 Library 2 API. API responses are cached in a local SQLite database to reduce calls and stay within rate limits.
                 Unauthenticated users can only view SpaceX launches on the homepage. Visitors can register for an account on the
                 website. More spaceflight launch information is available to view for authenticated users. Once registered, users can
@@ -256,9 +312,19 @@
         <!-- Body text inside the card. -->
         <div id="collapse-online-security" class="collapse">
             <div class="card-body border-top">
-                <p class="bottom-card-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                skateboard dolor brunch.</p>
+                <p class="bottom-card-text">In my final year at university, I completed a practical capstone project instead of a traditional dissertation. The
+                project titled:"Cybersecurity in the Modern World", was designed to bring together the technical and analytical skills developed
+                throughout my degree.
+                </p>
+                <p>I focused on a specific topic within Cybersecurity which was Social Engineering. I followed the full software development lifecycle, including
+                research, requirements analysis, system design, development, testing, and deployment. My degree provided experience in
+                SQL and data mining, Java and C# programming, web development, and project management using Agile and Waterfall
+                methodologies.</p>
+                <p>
+                    The website I created for the project is called Online Security Solutions, an e-learning website inspired by platforms such as Udemy and Coursera. The
+                    site delivers cybersecurity training through structured modules and requires users to register and verify their email
+                    before accessing content. Access control ensures only authenticated users can view educational modules.
+                </p>
             </div>
         </div>
     </article>
