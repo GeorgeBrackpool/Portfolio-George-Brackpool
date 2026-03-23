@@ -38,13 +38,12 @@
             <div class="row align-items-center justify-content-center">
                 <div class="page-header col-lg-8 col-md-10">
                     <h1 class="text-center page-header">George Brackpool Portfolio</h1>
-                    <p id="games">Hi! I am an indie game developer who has released two mobile games on the Google Play Store. 
-                        I build gameplay systems and fun replayable experiences, with a strong foundation in programming fundamentals and experience across game and web development.</p>
+                    <p id="games">Indie game developer with published titles on the Google Play Store for Mobile, bringing strong programming fundamentals, problem-solving skills, and
+                    hands-on experience across both game and web development.</p>
                 </div>
             </div>
         </div>
     </header>
-    <section id="games">
     <h1 class="text-center page-header mb-3">Games</h1>
     <!-- Duck Dive Card -->
     <article class="card project-card mb-4">
@@ -104,18 +103,22 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                <p>The player will tap or tap and hold on the screen to dive underwater. Points are earned by staying underwater and going through the obstacles without touching them. If the player touches an obstacle then
-                    they die and have to start again. Players can also fly into the air by swiping upwards when they are on the water's surface. Bread and Peas will appear in the air coming towards the player.
-                    If they successfully touch the bread or peas then they get bonus points. However there will be some hawks and swans also flying in the air so caution is needed by the player. There is also an oxygen
-                    system that the player must consider. When they dive underwater the oxygen meter reduces, as soon as they reach the surface of the water the Oxygen Meter refills. This adds an extra layer of difficulty
-                    and is another factor for the player to consider in whether they should fly or dive underwater to avoid obstacles.
+                <p>Players tap or hold on the screen to dive underwater, earning points by navigating through underwater obstacles without collision. Contact with
+                any obstacle results in a reset, encouraging careful timing and positioning.
+                
+                Whilst on the water's surface, players can swipe upward to launch into the air, where collectible items such as bread and
+                peas provide bonus points. However, airborne hazards like hawks and swans introduce additional risk, requiring quick
+                decision-making.
+                
+                An oxygen system adds a strategic layer to gameplay. Diving gradually depletes oxygen, which is slowly replenished
+                upon resurfacing. This creates a constant trade-off between staying underwater to score points and surfacing or flying
+                to avoid danger. The games difficulty gradually increases which increases the speed of obstacles and reduces the speed that your oxygen replenishes and increases how quickly it depletes.
                 </p>
                 <img src="images/touchscreen-dive.jpg" alt="A screenshot of Duck Dive with an overlay showing touch screen controls" class="rounded mx-auto d-block card-description-images">
 
-                <p>I implemented Google Play Games integration so that players could unlock achievements and compete with friends and other players globally by setting high scores on the leaderboard.
-                    The biggest challenge was implementing the unlockable skins feature. I used Unity's player prefs and scriptable objects for this feature. When a player had earned enough points to unlock
-                    one of the points achievements then during play booleans would change to make the skin selectable in the customisation shop. When the skin is selected it would set the PlayerPrefs to an integer assigned to the skin.
-                    When the player loads in, a script checks the PlayerPrefs and then accesses the sprite stored in the scriptable object (named SkinDatabase) associated with the playerpref integer and changes the Duck's sprite.
+                <p>I Implemented Google Play Games Services integration for achievements and global leaderboards. Built a scalable unlockable
+                skins system using PlayerPrefs and Scriptable Objects, enabling dynamic unlocking, persistent selection, and runtime
+                sprite swapping via a centralised SkinDatabase scriptable object.
                 </p>
 
                 <img src="images/duck_dive_customisation.PNG" alt="A screenshot of Duck Dive with an overlay showing touch screen controls" class="rounded mx-auto d-block card-description-images">
@@ -171,20 +174,22 @@
         <!-- Body text inside the card. -->
         <div id="collapse-space-tracer" class="collapse">
             <div class="card-body border-top">
-                <p class="bottom-card-text">Space Tracer was my first game release. Built for touchscreen on mobile devices Space Tracer is a top-down arcade game that has elements of
-                    Galaga and Space Invaders. The player taps and drags along the bottom of the screen to move the ship to avoid lasers and enemy ships. The ships laser fires automatically. 
-                </p>
-
-                <p>The player's movement is restricted to just move along the x-axis. The overall goal and gameplay loop is to rack up as
-                high of a score as possible whilst avoiding fast paced ships and projectiles. There are up to 20 unique waves to destroy
-                with a big boss every 5 waves. The waves will loop continously as long as the player is alive. To help the player random power ups will fall down 
-            from the top of the screen</p>
+                <p class="bottom-card-text">Space Tracer was my first published mobile game, designed as a touchscreen-first, top-down arcade shooter inspired by
+                classics like Galaga and Space Invaders.
+                
+                Players control a ship by dragging the ship with their finger along the bottom of the screen, the ship is restricted to horizontal (x-axis) movement, the main gun
+                automatically fires at incoming enemies. The core gameplay loop focuses on surviving increasingly fast-paced waves of
+                enemy ships and projectiles while building a high score.
+                
+                The game features up to 20 unique waves, with a boss encounter every 5 waves. Waves loop continuously to create an
+                endless progression system, the games difficulty increases over time. To support the player, randomised power-ups drop during
+                gameplay, adding variety and quick strategic advantages.</p>
             <img src="images/Space_tracer_Screenshot_2.jpg"
                 alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
                 class="rounded mx-auto d-block" style="height: 30em;">
 
-            <p>I used the Cloudonce plugin for Google Play Games integration to create a leaderboard and achievements. It is a great feature which gave players more of an
-            incentive to beat their high scores by comparing and competing with friends and players worldwide.</p>
+            <p>Integrated Google Play Games Services using the CloudOnce plugin to implement leaderboards and achievements, encouraging
+            player engagement through competition with friends and global high scores.</p>
             </div>
         </div>
     </article>
@@ -251,8 +256,6 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-8 col-md-10">
                 <h1 class="text-center page-header">Web Projects</h1>
-                <p>I have worked on a number of Website Projects. Although my main focus is on Game Development I would be open to any
-                C# or Python based roles in Web Development.</p>
             </div>
         </div>
     </div>
@@ -271,7 +274,8 @@
             <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
                 <div class="card-body">
                     <h5 class="card-title mb-2">Spaceflight Mission Tracker</h5>
-                    <p>My Final Project for Harvard University's CS50x. A Flask Web application that integrates a 3rd party API to let you view, favourite and set alerts for upcoming Space Launches.</p>
+                    <p>My Final Project for Harvard University's CS50x course. A full-stack Flask web application, designed to track and
+                    manage upcoming space launches using Launch Library 2 API data.</p>
                     <div class="badge-row mb-4">
                         <span class="badge">Python</span>
                         <span class="badge">Flask</span>
@@ -289,20 +293,24 @@
         <!-- Body text inside the card. -->
         <div id="collapse-mission-tracker" class="collapse">
             <div class="card-body border-top">
-                <p class="bottom-card-text">Due to CS50's rules I am unable to share the code publicly for this project. However I can share the Final Project
-                Demonstration which can be viewed via the youtube video below.</p>
+                <p class="bottom-card-text">Due to CS50x academic integrity rules, the source code is not publicly available. However, a project demonstration
+                is provided in the Youtube video below.</p>
                 <div class="d-flex justify-content-center">
                 <iframe class="justify-content-center" width="560" height="315" src="https://www.youtube-nocookie.com/embed/jeJ9ZQ10lHA?si=JC0DsKzoNxZZFQJ2"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <p class="bottom-card-text mt-4">This is a Flask Web Application that fetches and displays upcoming SpaceX and other Spaceflight launches using the Launch
-                Library 2 API. API responses are cached in a local SQLite database to reduce calls and stay within rate limits.
-                Unauthenticated users can only view SpaceX launches on the homepage. Visitors can register for an account on the
-                website. More spaceflight launch information is available to view for authenticated users. Once registered, users can
-                log in and view mission details for all upcoming space missions from all agencies. Authenticated users can favourite
-                missions to view later on their dashboard. Authenticated users can also set alerts for upcoming launches.</p>
+                <p class="bottom-card-text mt-4">The application integrates the Launch Library 2 API to fetch and display upcoming launches from SpaceX and other global
+                space agencies. To optimise performance and remain within the API rate limits, responses are cached in a local SQLite
+                database.
+                
+                The platform includes a full authentication system, allowing users to register, log in, and access additional
+                functionality. Unauthenticated users can only view the next upcoming SpaceX launch, authenticated users however can view all
+                missions from all space agencies, favourite launches they like, and manage a personalised dashboard. I implemented secure password handling using the Werkzeug.security library, hashing passwords with
+                generate_password_hash and verifying them with check_password_hash.
+                
+                Users can also set alerts for upcoming launches, adding a layer of user-specific interactivity and engagement.</p>
             </div>
         </div>
     </article>
@@ -321,7 +329,8 @@
             <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
                 <div class="card-body">
                     <h5 class="card-title mb-2">Online Security Solutions</h5>
-                    <p>An ASP.NET MVC web application. Online Security Solutions is an E-Learning style website that I created for my final university project.</p>
+                    <p>A full-stack ASP.NET MVC web application developed as my final-year capstone project for University, focused on delivering
+                    cybersecurity education through an e-learning platform.</p>
                     <div class="badge-row mb-4">
                         <span class="badge">C#</span>
                         <span class="badge">ASP.NET</span>
@@ -340,18 +349,15 @@
         <!-- Body text inside the card. -->
         <div id="collapse-online-security" class="collapse">
             <div class="card-body border-top">
-                <p class="bottom-card-text">In my final year at university, I completed a practical capstone project instead of a traditional dissertation. The
-                project titled:"Cybersecurity in the Modern World", was designed to bring together the technical and analytical skills developed
-                throughout my degree. It is built using ASP.NET MVC with C#, Javascript and SQL.
+                <p class="bottom-card-text">The project, titled “Cybersecurity in the Modern World,” explored social engineering as a core topic, combining research
+                with practical software development. The application was built using C#, ASP.NET MVC, JavaScript, and SQL.
                 </p>
-                <p>I focused on a specific topic within Cybersecurity which was Social Engineering. I followed the full software development lifecycle, including
-                research, requirements analysis, system design, development, testing, and deployment. My degree provided experience in
-                SQL and data mining, Java and C# programming, web development, and project management using Agile and Waterfall
-                methodologies.</p>
+                <p>Inspired by platforms such as Udemy and Coursera, the system delivers educational content through structured modules. A
+                full authentication system was implemented, requiring users to register and verify their email before accessing
+                protected content. Passwords are securely encrypted using a custom Crypto class that applies the SHA-256 hash function. Role-based access control ensures that only authenticated users can view learning materials.</p>
                 <p>
-                    The website I created for the project is called Online Security Solutions, an e-learning website inspired by platforms such as Udemy and Coursera. The
-                    site delivers cybersecurity training through structured modules and requires users to register and verify their email
-                    before accessing content. Access control ensures only authenticated users can view educational modules. The website has a fully working login system.
+                    The project followed the full software development lifecycle, including requirements analysis, system design,
+                    development, testing, and deployment, demonstrating end-to-end ownership of a complete web application.
                 </p>
                 <img src="images/oss_login.JPG"
                     alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."

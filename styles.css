@@ -89,8 +89,15 @@ html {
 .page-header
 {
     padding-top: 1rem;
-    font-size: 2em;
-    font-weight: 800;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+#games
+{
+    padding-top: .2em;
+    font-size: .9em;
+    text-align: center;
 }
 .navbar .nav-divider
 {
