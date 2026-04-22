@@ -259,6 +259,57 @@
             </div>
         </div>
     </div>
+    <!-- Satellite Tracker -->
+    <article class="card project-card mb-4">
+        <!-- The top row for image and summary part of the card. -->
+        <div class="row g-0">
+            <!-- Image -->
+            <div class="col-12 col-md-5">
+                <a href="">
+                    <img src="images/Satellite Tracker WIP.JPG" class="img-fluid h-100 w-100 card-img-left"
+                        alt="A screenshot of the Spaceflight Mission Tracker Homepage.">
+                </a>
+            </div>
+            <!-- Text/icons -->
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">3D Satellite Tracker (Work In Progress)</h5>
+                    <p>A small Javascript based project that uses THREE.js to visualise satellite's above earth and their orbit path in 3D. Currently a work in progress.</p>
+                    <div class="badge-row mb-4">
+                        <span class="badge">Javascript</span>
+                        <span class="badge">THREE.js</span>
+                        <span class="badge">HTML & CSS</span>
+                        <span class="badge">Vite</span>
+                    </div>
+                <!-- Collapse Toggle -->
+                <div class="panel-actions d-flex align-items-center gap-3">
+                    <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-satellite-tracker" aria-expanded="false" role="button">
+                        <span class="panel-text">More info</span>
+                        <i class="fa fa-chevron-up"></i>
+                    </div>
+                    <!-- External buttons -->
+                    <a href="https://github.com/GeorgeBrackpool/GBrackpool-Satellite-Tracker" class="panel-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Body text inside the card. -->
+        <div id="collapse-satellite-tracker" class="collapse">
+            <div class="card-body border-top">
+                <p class="bottom-card-text">A real-time 3D satellite visualisation built using three.js, displaying the Earth and accurately tracking satellite
+                positions using real orbital data from Celestrak.
+                
+                The application uses Two-Line Element set (TLE) data and the satellite.js library to calculate satellite positions in
+                real time via the SGP4 algorithm. These positions are converted from space-based coordinates into Earth-relative
+                latitude and longitude, then mapped onto a 3D sphere to accurately represent orbital movement around the planet.
+                
+                The project demonstrates how real-world orbital mechanics data can be integrated into a modern web-based 3D environment,
+                creating an interactive and visually engaging simulation of satellites orbiting Earth.</p>
+            </div>
+        </div>
+    </article>
     <!-- CS50 Spaceflight Mission Tracker -->
     <article class="card project-card mb-4">
         <!-- The top row for image and summary part of the card. -->
@@ -282,11 +333,16 @@
                         <span class="badge">SQLAlchemy</span>
                     </div>
                     <!-- Collapse Toggle -->
-                    <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-mission-tracker" aria-expanded="false" role="button">
-                        <span class="panel-text">More info</span>
-                        <i class="fa fa-chevron-up"></i>
-                    </div>
+                    <div class="panel-actions d-flex align-items-center gap-3">
+                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-mission-tracker" aria-expanded="false" role="button">
+                            <span class="panel-text">More info</span>
+                            <i class="fa fa-chevron-up"></i>
+                        </div>
+                        <!-- External buttons -->
+                        <a href="https://github.com/GeorgeBrackpool/AsteroidAssault" class="panel-btn" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                 </div>
             </div>
         </div>
@@ -338,11 +394,15 @@
                         <span class="badge">SQL</span>
                     </div>
                     <!-- Collapse Toggle -->
+                <div class="panel-actions d-flex align-items-center gap-3">
                     <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
                         data-bs-target="#collapse-online-security" aria-expanded="false" role="button">
                         <span class="panel-text">More info</span>
                         <i class="fa fa-chevron-up"></i>
                     </div>
+                    <a href="https://github.com/GeorgeBrackpool/FinalProjectSite" class="panel-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
