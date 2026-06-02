@@ -12,7 +12,6 @@
     <script src="https://kit.fontawesome.com/77f7da89c1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid nav-container">
@@ -24,8 +23,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#games">Games</a>
                     <a class="nav-link" href="#web">Web</a> <!--Link to section labeled web. Keep to one page.-->
+                    <a class="nav-link" href="#games">Games</a>
                 </div>
             </div>
         </div>
@@ -38,220 +37,12 @@
             <div class="row align-items-center justify-content-center">
                 <div class="page-header col-lg-8 col-md-10">
                     <h1 class="text-center page-header">George Brackpool Portfolio</h1>
-                    <p id="games">Indie game developer with published titles on the Google Play Store for Mobile, bringing strong programming fundamentals, problem-solving skills, and
-                    hands-on experience across both game and web development.</p>
+                    <p id="web">Web & Game developer with published titles on the Google Play Store for Mobile, bringing strong programming fundamentals, problem-solving skills, and
+                    hands-on experience across both game and web development. Recently completed Harvard's CS50x.</p>
                 </div>
             </div>
         </div>
     </header>
-    <h1 class="text-center page-header mb-3">Games</h1>
-    <!-- Duck Dive Card -->
-    <article class="card project-card mb-4">
-        <!-- The top row for image and summary part of the card. -->
-        <div class="row g-0">
-            <!-- Image -->
-            <div class="col-12 col-md-5">
-                <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.DuckDive&hl=en_GB" target="_blank" rel="noopener">
-                    <img src="images/DD_main_menu.PNG" class="img-fluid h-100 w-100 card-img-left"
-                        alt="Duck Dive main menu">
-                </a>
-            </div>
-            <!-- Text/icons -->
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Duck Dive</h5>
-                    <p>An arcade side-scroller where you play as a mallard duck avoiding obstacles. Available on the Google Play Store and itch.io.</p>
-                    <div class="badge-row mb-4">
-                        <span class="badge">C#</span>
-                        <span class="badge">Unity</span>
-                        <span class="badge">Google Play</span>
-                        <span class="badge">WebGL</span>
-                    </div>
-                    <!-- Collapse Toggle -->
-                <div class="panel-actions d-flex align-items-center gap-3">
-                    <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-duck-dive" aria-expanded="false" role="button">
-                        <span class="panel-text">More info</span>
-                        <i class="fa fa-chevron-up"></i>
-                    </div>
-                    <!-- External buttons -->
-                    <a href="https://github.com/GeorgeBrackpool/Duck-Dive" class="panel-btn" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    
-                    <a href="https://gbrackpool.itch.io/duck-dive" class="panel-btn" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-itch-io"></i>
-                    </a>
-
-                    <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.DuckDive&hl=en_GB" class="panel-btn" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-google-play"></i>
-                    </a>
-                </div>
-            </div>
-        </div> 
-    </div>
-        <!-- Body text inside the card. -->
-        <div id="collapse-duck-dive" class="collapse">
-            <div class="card-body border-top">
-                <p class="bottom-card-text">Duck Dive was my second mobile game release. I used what I had learnt from Space Tracer and built upon it to create an arcade side-scroller game with
-                    high replayability. I tried to capture the simple but fun nature of popular mobile games around 2010 such as Temple Run and Flappy Bird. The inspiration for the project was
-                watching ducks at my local lake feed off of the bottom of the lake by diving underwater. 
-                </p>
-                <div class="d-flex justify-content-center">
-                <iframe class="justify-content-center" width="560" height="315" src="https://www.youtube.com/embed/4BAXRm54IiU?si=FjR_LcMYg4DhmdvU"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                <p>Players tap or hold on the screen to dive underwater, earning points by navigating through underwater obstacles without collision. Contact with
-                any obstacle results in a reset, encouraging careful timing and positioning.
-                
-                Whilst on the water's surface, players can swipe upward to launch into the air, where collectible items such as bread and
-                peas provide bonus points. However, airborne hazards like hawks and swans introduce additional risk, requiring quick
-                decision-making.
-                
-                An oxygen system adds a strategic layer to gameplay. Diving gradually depletes oxygen, which is slowly replenished
-                upon resurfacing. This creates a constant trade-off between staying underwater to score points and surfacing or flying
-                to avoid danger. The games difficulty gradually increases which increases the speed of obstacles and reduces the speed that your oxygen replenishes and increases how quickly it depletes.
-                </p>
-                <img src="images/touchscreen-dive.jpg" alt="A screenshot of Duck Dive with an overlay showing touch screen controls" class="img-fluid rounded mx-auto d-block card-description-images">
-
-                <p>I Implemented Google Play Games Services integration for achievements and global leaderboards. Built a scalable unlockable
-                skins system using PlayerPrefs and Scriptable Objects, enabling dynamic unlocking, persistent selection, and runtime
-                sprite swapping via a centralised SkinDatabase scriptable object.
-                </p>
-
-                <img src="images/duck_dive_customisation.PNG" alt="A screenshot of Duck Dive with an overlay showing touch screen controls" class="img-fluid rounded mx-auto d-block card-description-images">
-            </div>
-        </div>
-    </article>
-    <!-- Space Tracer Card -->
-    <article class="card project-card mb-4">
-        <!-- The top row for image and summary part of the card. -->
-        <div class="row g-0">
-            <!-- Image -->
-            <div class="col-12 col-md-5">
-                <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.SpaceTracer&hl=en_GB" target="_blank" rel="noopener">
-                    <img src="images/Space_Tracer_Thumbnail.jpg" class="img-fluid h-100 w-100 card-img-left"
-                        alt="A thumbnail for Space Tracer">
-                </a>
-            </div>
-            <!-- Text/icons -->
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Space Tracer</h5>
-                    <p>A fun top-down arcade game which mixes Space Invaders with Galaga. Available on the Google
-                        Play Store and itch.io.</p>
-                    <div class="badge-row mb-4">
-                        <span class="badge">C#</span>
-                        <span class="badge">Unity</span>
-                        <span class="badge">WebGL</span>
-                    </div>
-                    <!-- Collapse Toggle -->
-                <div class="panel-actions d-flex align-items-center gap-3">
-                    <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-space-tracer" aria-expanded="false" role="button">
-                        <span class="panel-text">More info</span>
-                        <i class="fa fa-chevron-up"></i>
-                    </div>
-                    <!-- External buttons -->
-                    <a href="https://github.com/GeorgeBrackpool/Space-Tracer" class="panel-btn" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    
-                    <a href="https://gbrackpool.itch.io/space-tracer" class="panel-btn" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-itch-io"></i>
-                    </a>
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.SpaceTracer&hl=en_GB" class="panel-btn"
-                        target="_blank" rel="noopener">
-                        <i class="fa-brands fa-google-play"></i>
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Body text inside the card. -->
-        <div id="collapse-space-tracer" class="collapse">
-            <div class="card-body border-top">
-                <p class="bottom-card-text">Space Tracer was my first published mobile game, designed as a touchscreen-first, top-down arcade shooter inspired by
-                classics like Galaga and Space Invaders.
-                
-                Players control a ship by dragging the ship with their finger along the bottom of the screen, the ship is restricted to horizontal (x-axis) movement, the main gun
-                automatically fires at incoming enemies. The core gameplay loop focuses on surviving increasingly fast-paced waves of
-                enemy ships and projectiles while building a high score.
-                
-                The game features up to 20 unique waves, with a boss encounter every 5 waves. Waves loop continuously to create an
-                endless progression system, the games difficulty increases over time. To support the player, randomised power-ups drop during
-                gameplay, adding variety and quick strategic advantages.</p>
-            <img src="images/Space_tracer_Screenshot_2.jpg"
-                alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
-                class="img-fluid rounded mx-auto d-block" style="height: 30em;">
-
-            <p>Integrated Google Play Games Services using the CloudOnce plugin to implement leaderboards and achievements, encouraging
-            player engagement through competition with friends and global high scores.</p>
-            </div>
-        </div>
-    </article>
-    <!-- Asteroid Assault Card -->
-    <article class="card project-card mb-4">
-        <!-- The top row for image and summary part of the card. -->
-        <div class="row g-0">
-            <!-- Image -->
-            <div class="col-12 col-md-5">
-                <a href="https://gbrackpool.itch.io/asteroid-assault" target="_blank" rel="noopener">
-                    <img src="images/Asteroid_Assault.PNG" class="img-fluid h-100 w-100 card-img-left"
-                        alt="Screenshot from Asteroid Assault">
-                </a>
-            </div>
-            <!-- Text/icons -->
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-center" id="web">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Asteroid Assault</h5>
-                    <p>A 3D on-rails action game set nearby a gas planet with a dense asteroid field. Escape the attack from the enemy fleet!</p>
-                    <div class="badge-row mb-4">
-                        <span class="badge">C#</span>
-                        <span class="badge">Unity</span>
-                        <span class="badge">WebGL</span>
-                    </div>
-                    <!-- Collapse Toggle -->
-                    <div class="panel-actions d-flex align-items-center gap-3">
-                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-asteroid-assault" aria-expanded="false" role="button">
-                            <span class="panel-text">More info</span>
-                            <i class="fa fa-chevron-up"></i>
-                        </div>
-                        <!-- External buttons -->
-                        <a href="https://github.com/GeorgeBrackpool/AsteroidAssault" class="panel-btn" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    
-                        <a href="https://gbrackpool.itch.io/asteroid-assault" class="panel-btn" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-itch-io"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Body text inside the card. -->
-        <div id="collapse-asteroid-assault" class="collapse">
-            <div class="card-body border-top">
-                <p class="bottom-card-text">Asteroid Assault was my first 3D release, it is an on-rails shooter. Inspired by Starfox and the scene from Star Wars: The Empire Strikes Back where
-                    they encounter a giant space worm in the asteroid field. Built in Unity and available to download and play through itch.io.
-                </p>
-                <img src="images/Asteroid_1.png"
-                    alt="A screenshot of Asteroid Assault showing two ships and a background with a brown planet with a large ring."
-                    class="img-fluid rounded mx-auto d-block card-description-images">
-                <p>For the on-rails feature I used the timeline function in Unity. There are a few ways to create the rails in Unity and the most standard and way is to use Splines however in this instance I used the timeline feature which worked well for a small project like this.
-                    The player runs on a master timeline with the enemy waves put under an enemy timeline for each wave. 
-                </p>
-                <img src="images/Asteroid_2.png" alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
-                    class="img-fluid rounded mx-auto d-block card-description-images">
-                    <p>The player can move the ship with WASD keys and move the mouse to aim and left click to fire. There is a sphere that follows the cursor direction for the projectiles to go towards to collide with enemies.</p>
-            </div>
-        </div>
-    </article>
-    </section>
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-8 col-md-10">
@@ -318,6 +109,7 @@
                 creating an interactive and visually engaging simulation of satellites orbiting Earth.</p>
             </div>
         </div>
+    </div>
     </article>
     <!-- CS50 Spaceflight Mission Tracker -->
     <article class="card project-card mb-4">
@@ -374,7 +166,9 @@
                 Users can also set alerts for upcoming launches, adding a layer of user-specific interactivity and engagement.</p>
             </div>
         </div>
+    </div>
     </article>
+    <div id="games"></div>
     <!-- Final Project University -->
     <article class="card project-card mb-4">
         <!-- The top row for image and summary part of the card. -->
@@ -429,8 +223,251 @@
                     class="img-fluid rounded mx-auto d-block card-description-images">
             </div>
         </div>
+    </div>
     </article>
-    </section>
+    <h1 class="text-center page-header mb-3">Games</h1>
+    <!-- Duck Dive Card -->
+    <article class="card project-card mb-4">
+        <!-- The top row for image and summary part of the card. -->
+        <div class="row g-0">
+            <!-- Image -->
+            <div class="col-12 col-md-5">
+                <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.DuckDive&hl=en_GB" target="_blank"
+                    rel="noopener">
+                    <img src="images/DD_main_menu.PNG" class="img-fluid h-100 w-100 card-img-left"
+                        alt="Duck Dive main menu">
+                </a>
+            </div>
+            <!-- Text/icons -->
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">Duck Dive</h5>
+                    <p>An arcade side-scroller where you play as a mallard duck avoiding obstacles. Available on the Google
+                        Play Store and itch.io.</p>
+                    <div class="badge-row mb-4">
+                        <span class="badge">C#</span>
+                        <span class="badge">Unity</span>
+                        <span class="badge">Google Play</span>
+                        <span class="badge">WebGL</span>
+                    </div>
+                    <!-- Collapse Toggle -->
+                    <div class="panel-actions d-flex align-items-center gap-3">
+                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-duck-dive" aria-expanded="false" role="button">
+                            <span class="panel-text">More info</span>
+                            <i class="fa fa-chevron-up"></i>
+                        </div>
+                        <!-- External buttons -->
+                        <a href="https://github.com/GeorgeBrackpool/Duck-Dive" class="panel-btn" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+    
+                        <a href="https://gbrackpool.itch.io/duck-dive" class="panel-btn" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-itch-io"></i>
+                        </a>
+    
+                        <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.DuckDive&hl=en_GB"
+                            class="panel-btn" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-google-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Body text inside the card. -->
+        <div id="collapse-duck-dive" class="collapse">
+            <div class="card-body border-top">
+                <p class="bottom-card-text">Duck Dive was my second mobile game release. I used what I had learnt from Space
+                    Tracer and built upon it to create an arcade side-scroller game with
+                    high replayability. I tried to capture the simple but fun nature of popular mobile games around 2010
+                    such as Temple Run and Flappy Bird. The inspiration for the project was
+                    watching ducks at my local lake feed off of the bottom of the lake by diving underwater.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <iframe class="justify-content-center" width="560" height="315"
+                        src="https://www.youtube.com/embed/4BAXRm54IiU?si=FjR_LcMYg4DhmdvU" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>Players tap or hold on the screen to dive underwater, earning points by navigating through underwater
+                    obstacles without collision. Contact with
+                    any obstacle results in a reset, encouraging careful timing and positioning.
+    
+                    Whilst on the water's surface, players can swipe upward to launch into the air, where collectible items
+                    such as bread and
+                    peas provide bonus points. However, airborne hazards like hawks and swans introduce additional risk,
+                    requiring quick
+                    decision-making.
+    
+                    An oxygen system adds a strategic layer to gameplay. Diving gradually depletes oxygen, which is slowly
+                    replenished
+                    upon resurfacing. This creates a constant trade-off between staying underwater to score points and
+                    surfacing or flying
+                    to avoid danger. The games difficulty gradually increases which increases the speed of obstacles and
+                    reduces the speed that your oxygen replenishes and increases how quickly it depletes.
+                </p>
+                <img src="images/touchscreen-dive.jpg"
+                    alt="A screenshot of Duck Dive with an overlay showing touch screen controls"
+                    class="img-fluid rounded mx-auto d-block card-description-images">
+    
+                <p>I Implemented Google Play Games Services integration for achievements and global leaderboards. Built a
+                    scalable unlockable
+                    skins system using PlayerPrefs and Scriptable Objects, enabling dynamic unlocking, persistent selection,
+                    and runtime
+                    sprite swapping via a centralised SkinDatabase scriptable object.
+                </p>
+    
+                <img src="images/duck_dive_customisation.PNG"
+                    alt="A screenshot of Duck Dive with an overlay showing touch screen controls"
+                    class="img-fluid rounded mx-auto d-block card-description-images">
+            </div>
+        </div>
+    </div>
+    </article>
+    <!-- Space Tracer Card -->
+    <article class="card project-card mb-4">
+        <!-- The top row for image and summary part of the card. -->
+        <div class="row g-0">
+            <!-- Image -->
+            <div class="col-12 col-md-5">
+                <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.SpaceTracer&hl=en_GB" target="_blank"
+                    rel="noopener">
+                    <img src="images/Space_Tracer_Thumbnail.jpg" class="img-fluid h-100 w-100 card-img-left"
+                        alt="A thumbnail for Space Tracer">
+                </a>
+            </div>
+            <!-- Text/icons -->
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">Space Tracer</h5>
+                    <p>A fun top-down arcade game which mixes Space Invaders with Galaga. Available on the Google
+                        Play Store and itch.io.</p>
+                    <div class="badge-row mb-4">
+                        <span class="badge">C#</span>
+                        <span class="badge">Unity</span>
+                        <span class="badge">WebGL</span>
+                    </div>
+                    <!-- Collapse Toggle -->
+                    <div class="panel-actions d-flex align-items-center gap-3">
+                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-space-tracer" aria-expanded="false" role="button">
+                            <span class="panel-text">More info</span>
+                            <i class="fa fa-chevron-up"></i>
+                        </div>
+                        <!-- External buttons -->
+                        <a href="https://github.com/GeorgeBrackpool/Space-Tracer" class="panel-btn" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+    
+                        <a href="https://gbrackpool.itch.io/space-tracer" class="panel-btn" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-itch-io"></i>
+                        </a>
+    
+                        <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.SpaceTracer&hl=en_GB"
+                            class="panel-btn" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-google-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Body text inside the card. -->
+        <div id="collapse-space-tracer" class="collapse">
+            <div class="card-body border-top">
+                <p class="bottom-card-text">Space Tracer was my first published mobile game, designed as a
+                    touchscreen-first, top-down arcade shooter inspired by
+                    classics like Galaga and Space Invaders.
+    
+                    Players control a ship by dragging the ship with their finger along the bottom of the screen, the ship
+                    is restricted to horizontal (x-axis) movement, the main gun
+                    automatically fires at incoming enemies. The core gameplay loop focuses on surviving increasingly
+                    fast-paced waves of
+                    enemy ships and projectiles while building a high score.
+    
+                    The game features up to 20 unique waves, with a boss encounter every 5 waves. Waves loop continuously to
+                    create an
+                    endless progression system, the games difficulty increases over time. To support the player, randomised
+                    power-ups drop during
+                    gameplay, adding variety and quick strategic advantages.</p>
+                <img src="images/Space_tracer_Screenshot_2.jpg"
+                    alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
+                    class="img-fluid rounded mx-auto d-block">
+    
+                <p>Integrated Google Play Games Services using the CloudOnce plugin to implement leaderboards and
+                    achievements, encouraging
+                    player engagement through competition with friends and global high scores.</p>
+            </div>
+        </div>
+    </div>
+    </article>
+    <!-- Asteroid Assault Card -->
+    <article class="card project-card mb-4">
+        <!-- The top row for image and summary part of the card. -->
+        <div class="row g-0">
+            <!-- Image -->
+            <div class="col-12 col-md-5">
+                <a href="https://gbrackpool.itch.io/asteroid-assault" target="_blank" rel="noopener">
+                    <img src="images/Asteroid_Assault.PNG" class="img-fluid h-100 w-100 card-img-left"
+                        alt="Screenshot from Asteroid Assault">
+                </a>
+            </div>
+            <!-- Text/icons -->
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">Asteroid Assault</h5>
+                    <p>A 3D on-rails action game set nearby a gas planet with a dense asteroid field. Escape the attack from
+                        the enemy fleet!</p>
+                    <div class="badge-row mb-4">
+                        <span class="badge">C#</span>
+                        <span class="badge">Unity</span>
+                        <span class="badge">WebGL</span>
+                    </div>
+                    <!-- Collapse Toggle -->
+                    <div class="panel-actions d-flex align-items-center gap-3">
+                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-asteroid-assault" aria-expanded="false" role="button">
+                            <span class="panel-text">More info</span>
+                            <i class="fa fa-chevron-up"></i>
+                        </div>
+                        <!-- External buttons -->
+                        <a href="https://github.com/GeorgeBrackpool/AsteroidAssault" class="panel-btn" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+    
+                        <a href="https://gbrackpool.itch.io/asteroid-assault" class="panel-btn" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-itch-io"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Body text inside the card. -->
+        <div id="collapse-asteroid-assault" class="collapse">
+            <div class="card-body border-top">
+                <p class="bottom-card-text">Asteroid Assault was my first 3D release, it is an on-rails shooter. Inspired by
+                    Starfox and the scene from Star Wars: The Empire Strikes Back where
+                    they encounter a giant space worm in the asteroid field. Built in Unity and available to download and
+                    play through itch.io.
+                </p>
+                <img src="images/Asteroid_1.png"
+                    alt="A screenshot of Asteroid Assault showing two ships and a background with a brown planet with a large ring."
+                    class="img-fluid rounded mx-auto d-block card-description-images">
+                <p>For the on-rails feature I used the timeline function in Unity. There are a few ways to create the rails
+                    in Unity and the most standard and way is to use Splines however in this instance I used the timeline
+                    feature which worked well for a small project like this.
+                    The player runs on a master timeline with the enemy waves put under an enemy timeline for each wave.
+                </p>
+                <img src="images/Asteroid_2.png"
+                    alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
+                    class="img-fluid rounded mx-auto d-block card-description-images">
+                <p>The player can move the ship with WASD keys and move the mouse to aim and left click to fire. There is a
+                    sphere that follows the cursor direction for the projectiles to go towards to collide with enemies.</p>
+            </div>
+        </div>
+    </div>
+    </article>
     <footer>
         <div class="row justify-content-center">
             <div class="col-12 text-center">
