@@ -23,8 +23,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#games">Games</a> <!--Link to section labeled web. Keep to one page.-->
-                    <a class="nav-link" href="#web">Web</a>
+                    <a class="nav-link" href="#games">Games</a>
+                    <div class="nav-divider"></div>
+                    <a class="nav-link" href="#techart"> Technical Art</a>
+                    <div class="nav-divider"></div>
+                    <a class="nav-link" href="webprojects.html">Web Projects</a>
                 </div>
             </div>
         </div>
@@ -37,8 +40,8 @@
             <div class="row align-items-center justify-content-center">
                 <div class="page-header col-lg-8 col-md-10">
                     <h1 class="text-center page-header">George Brackpool Portfolio</h1>
-                    <p id="games">C# developer with published game titles on the Google Play Store, bringing strong programming fundamentals, problem-solving skills, and
-                    hands-on experience across both game and web development. Recently completed Harvard University's CS50x.</p>
+                    <p id="games">Developer with published game titles on the Google Play Store, bringing strong programming fundamentals, problem-solving skills, and
+                    hands-on experience across both game and web development. Recently completed an Unreal Engine Technical Art Skills bootcamp with Infinity27. Looking for a role as a Technical Artist.</p>
                 </div>
             </div>
         </div>
@@ -149,119 +152,6 @@
         </div>
     </div>
     </article>
-    <!-- Asteroid Assault Card -->
-    <article class="card project-card mb-4">
-        <!-- The top row for image and summary part of the card. -->
-        <div class="row g-0">
-            <!-- Image -->
-            <div class="col-12 col-md-5">
-                <a href="https://gbrackpool.itch.io/asteroid-assault" target="_blank" rel="noopener">
-                    <img src="images/Asteroid_Assault.PNG" class="img-fluid h-100 w-100 card-img-left"
-                        alt="Screenshot from Asteroid Assault">
-                </a>
-            </div>
-            <!-- Text/icons -->
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Asteroid Assault</h5>
-                    <p>A 3D on-rails action game set nearby a gas planet with a dense asteroid field. Escape the attack from
-                        the enemy fleet!</p>
-                    <div class="badge-row mb-4">
-                        <span class="badge">C#</span>
-                        <span class="badge">Unity</span>
-                    </div>
-                    <!-- Collapse Toggle -->
-                    <div class="panel-actions d-flex align-items-center gap-3">
-                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-asteroid-assault" aria-expanded="false" role="button">
-                            <span class="panel-text">More info</span>
-                            <i class="fa fa-chevron-up"></i>
-                        </div>
-                        <!-- External buttons -->
-                        <a href="https://github.com/GeorgeBrackpool/AsteroidAssault" class="panel-btn" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-    
-                        <a href="https://gbrackpool.itch.io/asteroid-assault" class="panel-btn" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-itch-io"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        <!-- Body text inside the card. -->
-        <div id="collapse-asteroid-assault" class="collapse">
-            <div class="card-body border-top">
-                <p class="bottom-card-text">Asteroid Assault was my first 3D release, it is an on-rails shooter. Inspired by
-                    Starfox and the scene from Star Wars: The Empire Strikes Back where
-                    they encounter a giant space worm in the asteroid field. Built in Unity and available to download and
-                    play through itch.io.
-                </p>
-                <img src="images/Asteroid_1.png"
-                    alt="A screenshot of Asteroid Assault showing two ships and a background with a brown planet with a large ring."
-                    class="img-fluid rounded mx-auto d-block card-description-images">
-                <p>For the on-rails feature I used the timeline function in Unity. There are a few ways to create the rails
-                    in Unity and the most standard and way is to use Splines however in this instance I used the timeline
-                    feature which worked well for a small project like this.
-                    The player runs on a master timeline with the enemy waves put under an enemy timeline for each wave.
-                </p>
-                <img src="images/Asteroid_2.png"
-                    alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
-                    class="img-fluid rounded mx-auto d-block card-description-images">
-                <p>The player can move the ship with WASD keys and move the mouse to aim and left click to fire. There is a
-                    sphere that follows the cursor direction for the projectiles to go towards to collide with enemies.</p>
-            </div>
-        </div>
-    </div>
-    </article>
-    <!-- Thurindor Card -->
-    <article class="card project-card mb-4">
-        <!-- The top row for image and summary part of the card. -->
-        <div class="row g-0">
-            <!-- Image -->
-            <div class="col-12 col-md-5">
-                <a href="https://play.google.com/store/apps/details?id=com.GBrackpool.SpaceTracer&hl=en_GB" target="_blank"
-                    rel="noopener">
-                    <img src="images/Thurindor_In_Progress.png" class="img-fluid h-100 w-100 card-img-left"
-                        alt="An in game screenshot of thurindor.">
-                </a>
-            </div>
-            <!-- Text/icons -->
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Thurindor (Work in progress)</h5>
-                    <p>A in-progress 3D RPG inspired by games such as Old School Runescape and Baldurs Gate 3, built using Unity and C#. </p>
-                    <div class="badge-row mb-4">
-                        <span class="badge">C#</span>
-                        <span class="badge">Unity</span>
-                    </div>
-                    <!-- Collapse Toggle -->
-                    <div class="panel-actions d-flex align-items-center gap-3">
-                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-thurindor" aria-expanded="false" role="button">
-                            <span class="panel-text">More info</span>
-                            <i class="fa fa-chevron-up"></i>
-                        </div>
-                        <!-- External buttons -->
-                        <a href="https://github.com/GeorgeBrackpool/Thurindor" class="panel-btn" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Body text inside the card. -->
-            <div id="collapse-thurindor" class="collapse">
-                <div class="card-body border-top">
-                    <p class="bottom-card-text">Thurindor is currently a work in progress. My aim for this project is to gain valuable skills in designing and implementing rich
-                        gameplay systems such as character progression, advanced combat mechanics and a shop system.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </article>
-    
     <!-- Space Tracer Card -->
     <article class="card project-card mb-4">
         <!-- The top row for image and summary part of the card. -->
@@ -342,33 +232,98 @@
             </div>
         </div>
     </article>
-    <div id="web"></div>
-    <h1 class="text-center page-header mb-3">Web Projects</h1>
+    <!-- Asteroid Assault Card -->
+    <article class="card project-card mb-4">
+        <!-- The top row for image and summary part of the card. -->
+        <div class="row g-0">
+            <!-- Image -->
+            <div class="col-12 col-md-5">
+                <a href="https://gbrackpool.itch.io/asteroid-assault" target="_blank" rel="noopener">
+                    <img src="images/Space Assault Icon.png" class="img-fluid h-100 w-100 card-img-left"
+                        alt="Screenshot from Asteroid Assault">
+                </a>
+            </div>
+            <!-- Text/icons -->
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">Asteroid Assault</h5>
+                    <p>A 3D on-rails action game set nearby a gas planet with a dense asteroid field. Escape the attack from
+                        the enemy fleet!</p>
+                    <div class="badge-row mb-4">
+                        <span class="badge">C#</span>
+                        <span class="badge">Unity</span>
+                    </div>
+                    <!-- Collapse Toggle -->
+                    <div class="panel-actions d-flex align-items-center gap-3">
+                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-asteroid-assault" aria-expanded="false" role="button">
+                            <span class="panel-text">More info</span>
+                            <i class="fa fa-chevron-up"></i>
+                        </div>
+                        <!-- External buttons -->
+                        <a href="https://github.com/GeorgeBrackpool/AsteroidAssault" class="panel-btn" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+    
+                        <a href="https://gbrackpool.itch.io/asteroid-assault" class="panel-btn" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-itch-io"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Body text inside the card. -->
+        <div id="collapse-asteroid-assault" class="collapse">
+            <div class="card-body border-top">
+                <p class="bottom-card-text">Asteroid Assault was my first 3D release, it is an on-rails shooter. Inspired by
+                    Starfox and the scene from Star Wars: The Empire Strikes Back where
+                    they encounter a giant space worm in the asteroid field. Built in Unity and available to download and
+                    play through itch.io.
+                </p>
+                <img src="images/Asteroid_1.png"
+                    alt="A screenshot of Asteroid Assault showing two ships and a background with a brown planet with a large ring."
+                    class="img-fluid rounded mx-auto d-block card-description-images">
+                <p>For the on-rails feature I used the timeline function in Unity. There are a few ways to create the rails
+                    in Unity and the most standard and way is to use Splines however in this instance I used the timeline
+                    feature which worked well for a small project like this.
+                    The player runs on a master timeline with the enemy waves put under an enemy timeline for each wave.
+                </p>
+                <img src="images/Asteroid_Assault.png"
+                    alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
+                    class="img-fluid rounded mx-auto d-block card-description-images">
+                <p>The player can move the ship with WASD keys and move the mouse to aim and left click to fire. There is a
+                    sphere that follows the cursor direction for the projectiles to go towards to collide with enemies.</p>
+            </div>
+        </div>
+    </div>
+    </article>
+    
+   
+    <div id="techart"></div>
+    <h1 class="text-center page-header mb-3">Technical Art</h1>
     <!-- Satellite Tracker -->
     <article class="card project-card mb-4">
         <!-- The top row for image and summary part of the card. -->
         <div class="row g-0">
             <!-- Image -->
             <div class="col-12 col-md-5">
-                <a href="https://georgebrackpool.github.io/GBrackpool-Satellite-Tracker/" target="_blank" rel="noopener">
-                    <img src="images/SatelliteTrackerScreenshot.JPG" class="img-fluid h-100 w-100 card-img-left"
+                <a href="https://www.artstation.com/artwork/La4oqw" target="_blank" rel="noopener">
+                    <img src="images/skillsbootcamp.jpg" class="img-fluid h-100 w-100 card-img-left"
                         alt="A screenshot of the Spaceflight Mission Tracker Homepage.">
                 </a>
             </div>
             <!-- Text/icons -->
             <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
                 <div class="card-body">
-                    <h5 class="card-title mb-2">3D Satellite Tracker</h5>
-                    <p>An interactive 3D satellite visualisation system built with Three.js and satellite.js that propagates
-                        real TLE (Two-Line
-                        Element) orbital data from Celestrak using the SGP4 algorithm to display current satellite positions
-                        and predicted
-                        orbital trajectories.</p>
+                    <h5 class="card-title mb-2">Procedural Asset Destruction Tool - Unreal Engine</h5>
+                    <p>Developed as part of Infinity27's Technical Artist Skills Bootcamp, this tool uses Blueprints, Procedural Content
+                    Generation (PCG), and Geometry Script to generate procedural damage variations for 3D assets in Unreal Engine.</p>
                     <div class="badge-row mb-4">
-                        <span class="badge">Javascript</span>
-                        <span class="badge">THREE.js</span>
-                        <span class="badge">HTML & CSS</span>
-                        <span class="badge">Vite</span>
+                        <span class="badge">Unreal Engine 5</span>
+                        <span class="badge">Procedural Content Generation</span>
+                        <span class="badge">Geometry Script</span>
+                        <span class="badge">Blueprints</span>
                     </div>
                     <!-- Collapse Toggle -->
                     <div class="panel-actions d-flex align-items-center gap-3">
@@ -378,13 +333,9 @@
                             <i class="fa fa-chevron-up"></i>
                         </div>
                         <!-- External buttons -->
-                        <a href="https://github.com/GeorgeBrackpool/GBrackpool-Satellite-Tracker" class="panel-btn"
+                        <a href="https://www.artstation.com/artwork/La4oqw" class="panel-btn"
                             target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://georgebrackpool.github.io/GBrackpool-Satellite-Tracker/" class="panel-btn"
-                            target="_blank" rel="noopener">
-                            <i class="fa-solid fa-globe"></i>
+                            <i class="fa-brands fa-artstation"></i>
                         </a>
                     </div>
                 </div>
@@ -392,165 +343,30 @@
             <!-- Body text inside the card. -->
             <div id="collapse-satellite-tracker" class="collapse">
                 <div class="card-body border-top">
-                    <p class="bottom-card-text">A real-time 3D satellite visualisation built using three.js, displaying the
-                        Earth and accurately tracking satellite
-                        positions using real orbital data from Celestrak.
-    
-                        The application uses Two-Line Element set (TLE) data and the satellite.js library to calculate
-                        satellite positions in
-                        real time via the SGP4 algorithm. Orbit paths are calculated and generated by propagating real TLE
-                        orbital data forward in time using the
-                        SGP4 algorithm via satellite.js.
-    
-                        Future satellite positions are sampled across a user-adjustable prediction window (via a slider) and
-                        converted from
-                        Earth-Centered Inertial (ECI) coordinates into geodetic latitude, longitude and altitude before
-                        being transformed into
-                        3D world-space positions for rendering.
-    
-                        The project demonstrates how real-world orbital mechanics data can be integrated into a modern
-                        web-based 3D environment,
-                        creating an interactive and visually engaging simulation of satellites orbiting Earth.</p>
+                    <p class="bottom-card-text">The tool features three distinct damage modes:
+                    
+                    Cracked - adds damage to an asset's surface.
+                    
+                    Decapitated - removes a section of the asset.
+                    
+                    Worn - creates a damaged, weathered appearance.
+                    
+                    The aim was to streamline asset preparation by enabling artists to generate damage variations procedurally, reducing the
+                    need to manually modify individual props and assets.
+                    
+                    This was my first experience with Unreal Engine and Technical Art, making it a fantastic opportunity to explore
+                    procedural workflows, tool development, and the intersection of programming and art.</p>
                 </div>
             </div>
         </div>
     </article>
-    <!-- CS50 Spaceflight Mission Tracker -->
-    <article class="card project-card mb-4">
-        <!-- The top row for image and summary part of the card. -->
-        <div class="row g-0">
-            <!-- Image -->
-            <div class="col-12 col-md-5">
-                <a href="">
-                    <img src="images/Spaceflight_Mission_Tracker.PNG" class="img-fluid h-100 w-100 card-img-left"
-                        alt="A screenshot of the Spaceflight Mission Tracker Homepage.">
-                </a>
-            </div>
-            <!-- Text/icons -->
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Spaceflight Mission Tracker</h5>
-                    <p>My Final Project for Harvard University's CS50x course. A full-stack Flask web application, designed
-                        to track and
-                        manage upcoming space launches using Launch Library 2 API data. Built using Python, Flask, SQLLite
-                        and SQLAlchemy</p>
-                    <div class="badge-row mb-4">
-                        <span class="badge">Python</span>
-                        <span class="badge">Flask</span>
-                        <span class="badge">SQLAlchemy</span>
-                    </div>
-                    <!-- Collapse Toggle -->
-                    <div class="panel-actions d-flex align-items-center gap-3">
-                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-mission-tracker" aria-expanded="false" role="button">
-                            <span class="panel-text">More info</span>
-                            <i class="fa fa-chevron-up"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Body text inside the card. -->
-            <div id="collapse-mission-tracker" class="collapse">
-                <div class="card-body border-top">
-                    <p class="bottom-card-text">Due to CS50x academic integrity rules, the source code is not publicly
-                        available. However, a project demonstration
-                        is provided in the Youtube video below.</p>
-                    <div class="d-flex justify-content-center">
-                        <iframe class="justify-content-center" width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/jeJ9ZQ10lHA?si=JC0DsKzoNxZZFQJ2"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <p class="bottom-card-text mt-4">The application integrates the Launch Library 2 API to fetch and
-                        display upcoming launches from SpaceX and other global
-                        space agencies. To optimise performance and remain within the API rate limits, responses are cached
-                        in a local SQLite
-                        database.
     
-                        The platform includes a full authentication system, allowing users to register, log in, and access
-                        additional
-                        functionality. Unauthenticated users can only view the next upcoming SpaceX launch, authenticated
-                        users however can view all
-                        missions from all space agencies, favourite launches they like, and manage a personalised dashboard.
-                        I implemented secure password handling using the Werkzeug.security library, hashing passwords with
-                        generate_password_hash and verifying them with check_password_hash.
-    
-                        Users can also set alerts for upcoming launches, adding a layer of user-specific interactivity and
-                        engagement.</p>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Final Project University -->
-    <article class="card project-card mb-4">
-        <!-- The top row for image and summary part of the card. -->
-        <div class="row g-0">
-            <!-- Image -->
-            <div class="col-12 col-md-5">
-                <a href="https://github.com/GeorgeBrackpool/FinalProjectSite" target="_blank" rel="noopener">
-                    <img src="images/OSS_Homepage.PNG" class="img-fluid h-100 w-100 card-img-left"
-                        alt="A screenshot of the online security solutions homepage.">
-                </a>
-            </div>
-            <!-- Text/icons -->
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Online Security Solutions</h5>
-                    <p>A full-stack ASP.NET MVC web application developed as my final-year capstone project for University,
-                        focused on delivering
-                        cybersecurity education through an e-learning platform.</p>
-                    <div class="badge-row mb-4">
-                        <span class="badge">C#</span>
-                        <span class="badge">ASP.NET</span>
-                        <span class="badge">MVC</span>
-                        <span class="badge">SQL</span>
-                    </div>
-                    <!-- Collapse Toggle -->
-                    <div class="panel-actions d-flex align-items-center gap-3">
-                        <div class="panel-heading d-flex align-items-center gap-2" data-bs-toggle="collapse"
-                            data-bs-target="#collapse-online-security" aria-expanded="false" role="button">
-                            <span class="panel-text">More info</span>
-                            <i class="fa fa-chevron-up"></i>
-                        </div>
-                        <a href="https://github.com/GeorgeBrackpool/FinalProjectSite" class="panel-btn" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Body text inside the card. -->
-            <div id="collapse-online-security" class="collapse">
-                <div class="card-body border-top">
-                    <p class="bottom-card-text">The project, titled “Cybersecurity in the Modern World,” explored social
-                        engineering as a core topic, combining research
-                        with practical software development. The application was built using C#, ASP.NET MVC, JavaScript,
-                        and SQL.
-                    </p>
-                    <p>Inspired by platforms such as Udemy and Coursera, the system delivers educational content through
-                        structured modules. A
-                        full authentication system was implemented, requiring users to register and verify their email
-                        before accessing
-                        protected content. Passwords are securely encrypted using a custom Crypto class that applies the
-                        SHA-256 hash function. Role-based access control ensures that only authenticated users can view
-                        learning materials.</p>
-                    <p>
-                        The project followed the full software development lifecycle, including requirements analysis,
-                        system design,
-                        development, testing, and deployment, demonstrating end-to-end ownership of a complete web
-                        application.
-                    </p>
-                    <img src="images/oss_login.JPG"
-                        alt="A screenshot of Asteroid Assault where a large asteroid and an asteroid field are shown."
-                        class="img-fluid rounded mx-auto d-block card-description-images">
-                </div>
-            </div>
-        </div>
-    </article>
     <footer>
         <div class="row justify-content-center">
             <div class="col-12 text-center">
+                <a href="https://www.artstation.com/george_brackpool" class="btn footer-link" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-artstation"></i>
+                </a>
                 <a href="https://github.com/GeorgeBrackpool" class="btn footer-link" target="_blank" rel="noopener">
                     <i class="fa-brands fa-github"></i>
                 </a>

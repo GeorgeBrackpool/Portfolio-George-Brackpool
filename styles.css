@@ -99,9 +99,9 @@ html {
     font-size: .9em;
     text-align: center;
 }
-.navbar .nav-divider
+.nav-divider
 {
-        height: 2em;
+        height: 3em;
         width: 2px;
         color: var(--text);
         background-color: var(--text);
@@ -112,12 +112,13 @@ html {
 }
 
 @media (width <= 991px) {
-    .navbar .nav-divider{
+    .nav-divider{
         height: 0em;
         width: 0px;
         border: 0px;
     }
 }
+
 .navbar-toggler
 {
 
